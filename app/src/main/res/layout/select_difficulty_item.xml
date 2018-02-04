@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selectdifficulty"
+        android:contentDescription="@string/textBallRadius" />
+
+    <TextView
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textSelectDifficulty"
+        android:textColor="@color/color_green" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSelectDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radioBtnAmateur"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/textAmateur" />
+
+        <RadioButton
+            android:id="@+id/radioBtnSemiPro"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/textSemiPro" />
+
+        <RadioButton
+            android:id="@+id/radioBtnProfessional"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/textProfessional" />
+
+        <RadioButton
+            android:id="@+id/radioBtnWorldClass"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/textWorldClass" />
+
+        <RadioButton
+            android:id="@+id/radioBtnLegendary"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/textLegendary" />
+    </RadioGroup>
+
+</LinearLayout>
